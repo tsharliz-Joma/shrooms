@@ -3,9 +3,11 @@ let r;
 let d;
 let shrooms = [];
 let num = 4000;
+const canvasDiv = document.getElementById("canvasOne");
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(windowWidth, windowHeight);
+  // canvasOne.parent(canvasDiv)
   d = pixelDensity();
   angleMode(DEGREES);
   for (let i = 0; i < num; i++) {
